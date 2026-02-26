@@ -22,7 +22,5 @@ constexpr float BALL_MASS = 1;
 constexpr float ROD_LENGTH = 0.42;
 constexpr float ROD_WIDTH = SCALE / 5;
 
-constexpr glm::mat4 view =
-    glm::translate(glm::mat4(1.0f), glm::vec3(0, 0, 0.0f));
-const glm::mat4 projection =
-    glm::ortho(-1.0f * ASPECT, 1.0f * ASPECT, -1.0f, 1.0f, -1.0f, 1.0f);
+constexpr glm::mat4 view = glm::translate(glm::mat4(1.0f), glm::vec3(0, 0, 0.0f));
+const glm::mat4 projection = glm::ortho(-1.0f * ASPECT, 1.0f * ASPECT, -1.0f, 1.0f, -1.0f, 1.0f);

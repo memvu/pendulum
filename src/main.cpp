@@ -96,8 +96,8 @@ int main() {
       rods[i].render();
     }
 
-    trail.updateTrail();
-    trail.render();
+    // trail.updateTrail();
+    // trail.render();
 
     glfwSwapBuffers(window);
     glfwPollEvents();

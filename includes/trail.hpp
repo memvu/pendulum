@@ -5,16 +5,13 @@
 #include "shader.hpp"
 
 struct Trail {
-  void render();
   Trail(Ball &toTrack);
   void updateTrail();
-
+  void render();
 private:
   Ball &tracked;
-  std::deque<glm::vec3> trail;
-  // float vertices[] = {
-  //
-  // };
+  // std::deque<glm::vec3> trail;
+  float trail[MAX_LENGTH_TRAIL*2];
 
   void setupVAO();
   unsigned int VAO, VBO;
